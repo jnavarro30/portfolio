@@ -1,0 +1,124 @@
+.nav {
+    background: $banner;
+    position: sticky;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0.5rem;
+    top: 0;
+    z-index: 1;
+    font-size: 1.2rem;
+    
+
+    &__menu {
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        color: white;
+        width: 90%;
+        margin-left: 0.2rem;
+    }
+
+    &__icon {
+        justify-self: end;
+        font-size: 2rem;
+
+        &:hover {
+            cursor: pointer;
+            font-size: 2rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.9);
+        left: 0;
+        margin: 0.5rem 0;
+        padding-bottom: 0.2rem;
+        visibility: hidden;
+    }
+
+    .nav__link {
+        visibility: hidden;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        margin-left: 0.2rem;
+
+        &:hover {
+            background: rgba(225, 225, 225, 0.8);
+            color: black;
+        }
+    }
+
+  a {
+        border: none;
+            border-bottom: solid white;
+            padding: 0.4rem;
+            color: white;
+            text-decoration: none;
+    }
+
+    a:nth-child(1) {
+        border-bottom: solid $overlayOne;
+    }
+
+    a:nth-child(2) {
+        border-bottom: solid $overlayTwo;
+    }
+
+    a:nth-child(3) {
+        border-bottom: solid $overlayThree;
+    }
+
+    a:nth-child(4) {
+        border-bottom: solid $overlayFour;
+    }
+
+    a:nth-child(5) {
+        border-bottom: solid $overlayFive;
+    }
+
+    a:nth-child(6) {
+        border-bottom: solid $overlaySix;
+    }
+}
+
+// responsive
+@media (min-width: 700px){
+    .nav {
+        position: fixed;
+        width: 40%;
+        left: -40%;
+        height: 100%;
+        transition: 0.2s;
+
+        &__icon {
+            left: 1%;
+            position: fixed;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1.5rem;
+            border-radius: 2px;
+            transition: 0.2s;
+        }
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: auto;
+            background: none;
+        }
+
+        .nav__title {
+            font-size: 2.5rem;
+        }
+
+        .nav__link {
+            margin: 1rem;
+            visibility: visible;
+            font-weight: bolder;
+            font-size: 2.5rem;
+        }
+    }
+}
+

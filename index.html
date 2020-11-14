@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/739f32426d.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='css/styles.css'>
+    <script src='js/modules/form.js' defer></script>
     <script src='js/script.js' type='module' defer></script>
     <title>Portfolio</title>
 </head>
@@ -151,21 +152,22 @@
             </section>
             <section id='contact' class="footer__contact">
                 <h2 class="contact__title">Contact</h2>
-                <form action="" class="footer__form">
-                    <input type="text" class="form__name" placeholder="Name">
-                    <input type="text" class="form__email" placeholder="Email">
-                    <input type="text" class="form__message" placeholder="Message">
+                <form id="my-form" action="https://formspree.io/f/xnqovebe" method="POST" class="footer__form">
+                    <input id="name" name="name" type="text" class="form__name" placeholder="Name" required>
+                    <input id="email" name="email" type="email" class="form__email" placeholder="Email" required>
+                    <textarea id="message" name="message" type="text" class="form__message" placeholder="Message" cols="30" rows="8"></textarea>
+                    <button id="my-form-button" class="footer__send" type="submit" name="submit">SEND</button>
                 </form>
-                <button class="footer__send">SEND</button>
+                <div id="my-form-status"></div>
                 <ul class="footer__icons">
                     <li class="footer__icon">
-                        <a href='https://github.com/jnavarro30/'>
+                        <a href='https://github.com/jnavarro30/' target="_blank">
                             <span class='fab fa-github-square'></span>
                             <span class='footer__icon-text'>GitHub</span>
                         </a>
                     </li>
                     <li id='resume' class="footer__icon">
-                        <a href='https://drive.google.com/file/d/1D3hHzXXNuLLIx3Vt_rqKH4fbj-wvqegl/view?usp=sharing' download>
+                        <a href='https://drive.google.com/file/d/1TuJj6AIFCjUggCO--dFAUWQNHTrjmbxG/view?usp=sharing' target="_blank" download>
                             <span class='far fa-file-pdf'></span>
                             <span class='footer__icon-text'>Resumé</span>
                         </a>
@@ -179,4 +181,3 @@
 </html>
 
 
-<!-- description for each app -->

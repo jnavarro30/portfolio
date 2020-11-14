@@ -39,7 +39,7 @@
     }
 
     .nav__link {
-        visibility: hidden;
+        
         font-weight: bolder;
         font-size: 1.2rem;
         margin-left: 0.2rem;
@@ -121,4 +121,18 @@
         }
     }
 }
+
+// classes
+.show {
+    visibility: visible;
+}
+
+.show__nav {
+    left: 0;
+}
+
+.show__icon {
+    left: 41%;
+}
+
 

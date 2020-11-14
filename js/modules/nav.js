@@ -8,31 +8,16 @@ const Nav = ( _ => {
               navIconEl = document.querySelector('.nav__icon'),
               navLinksEl = document.querySelector('.nav__links'),
               navLinkEls = document.querySelectorAll('.nav__link');
-        
-        // toogle nav icon and menu
-        navIconEl.addEventListener('click', event => {
-            if(navIconEl.matches('.fa-times')) {
-                navIconEl.classList.add('fa-bars');
-                navIconEl.classList.remove('fa-times');
-                navLinksEl.style.visibility = 'hidden';
-                navLinkEls.forEach(link => link.style.visibility = 'hidden');
-                if(navEl.offsetWidth) {
-                    navEl.style.left = -40 + '%';
-                    navIconEl.style.left = 1 + '%';
-                }
-                
-            } else {
-                navIconEl.classList.remove('fa-bars');
-                navIconEl.classList.add('fa-times');
-                navLinksEl.style.visibility = 'visible';
-                navLinkEls.forEach(link => link.style.visibility = 'visible');
-                if(navEl.offsetWidth) {
-                    navEl.style.left = 0;
-                    navIconEl.style.left = 41 + '%';
-                }
-            }
-        });
 
+        // toggle show/hide nav
+        navIconEl.addEventListener('click', _ => {
+            navIconEl.classList.toggle('fa-bars');
+            navIconEl.classList.toggle('fa-times');
+            navIconEl.classList.toggle('show__icon');
+            navEl.classList.toggle('show__nav');
+            navLinksEl.classList.toggle('show');
+        });
+        
         // highlight project on click
         navLinkEls.forEach(link => {
             link.addEventListener('click', _ => {
@@ -44,8 +29,8 @@ const Nav = ( _ => {
                 projectEl.style.boxShadow = `0 0 46px 50px ${color}`;
                 projectEl.style.transform = 'rotate(2deg)';
                
-                // remove highlight
-                setInterval(_ =>  {
+                // remove highlight & rotate back
+                setTimeout(_ =>  {
                     projectEl.style.boxShadow = null;
                     projectEl.style.transform = 'rotate(0deg)';
                 }, 1000);    

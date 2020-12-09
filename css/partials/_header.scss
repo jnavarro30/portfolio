@@ -12,7 +12,15 @@
 @media (min-width: 700px) {
     .header {
         &__title {
-            font-size: 4.5rem;
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .header {
+        &__title {
+            font-size: 4rem;
         }
     }
 }

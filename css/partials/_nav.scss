@@ -15,12 +15,12 @@
         color: white;
         width: 90%;
         margin-left: 0.2rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     &__icon {
         justify-self: end;
-        font-size: 1.2rem;
+        font-size: 2rem;
 
         &:hover {
             cursor: pointer;
@@ -31,6 +31,7 @@
     &__links {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
         position: absolute;
         background: rgba(0, 0, 0, 0.9);
         left: 0;

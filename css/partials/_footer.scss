@@ -8,14 +8,14 @@
     }
 
     .about__description {
-        margin: 1rem;
+        margin: 2rem;
         font-size: 1.2rem;
     }
 
     &__form {
         display: flex;
         flex-direction: column;
-        margin: 1rem;
+        margin: 2rem;
         grid-gap: 1rem;
 
         input, textarea {

@@ -4,6 +4,7 @@
         grid-gap: 2rem;
         margin: 3rem;
         list-style-type: none;
+        justify-content: center;
     }
     
     &__project {
@@ -144,3 +145,12 @@
         
     }
 }
+
+@media (min-width: 1200px) {
+    .main {
+      &__projects {
+          grid-template-columns: repeat(3, minmax(auto, 400px));
+      }  
+    }
+}
+

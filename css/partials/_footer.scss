@@ -173,6 +173,17 @@
 @media(min-width: 1000px) {
     .footer {
 
+        #my-form {
+            margin: 2rem auto;
+            width: 90%;
+        }
+
+        .about__description{
+            margin: 2rem auto;
+        width: 90%;
+
+        }
+
         .fa-github-square, .fa-file-pdf {
             font-size: 6rem;
             margin: 0 6rem;

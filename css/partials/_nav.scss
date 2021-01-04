@@ -94,8 +94,9 @@
         transition: 0.2s;
 
         &__icon {
-            left: 1%;
-            position: fixed;
+            left: 103%;
+            top: 0.2%;
+            position: absolute;
             background: rgba(0, 0, 0, 0.9);
             padding: 1rem;
             border-radius: 2px;
@@ -125,12 +126,22 @@
 
 @media (min-width: 1000px) {
     .nav {
-        .nav__title {
+        position: fixed;
+        width: 30%;
+        left: -30%;
+        height: 100%;
+        transition: 0.2s;
+
+        &__title {
             font-size: 2.5rem;
         }
 
+    
+
         &__icon {
-            font-size: 2.2rem;
+            font-size: 2.8rem;
+            left: 104%;
+            top: 0.5%;
     
             &:hover {
                 font-size: 2.5rem;
@@ -149,7 +160,7 @@
 }
 
 .show__icon {
-    left: 41%;
+    left: 110%;
 }
 
 

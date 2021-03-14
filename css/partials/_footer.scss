@@ -8,14 +8,14 @@
     }
 
     .about__description {
-        margin: 1rem;
+        margin: 2rem;
         font-size: 1.2rem;
     }
 
     &__form {
         display: flex;
         flex-direction: column;
-        margin: 1rem;
+        margin: 2rem;
         grid-gap: 1rem;
 
         input, textarea {
@@ -176,7 +176,22 @@
 @media(min-width: 1000px) {
     .footer {
 
+<<<<<<< HEAD
         .fa-github-square, .fa-file-pdf, .fa-linkedin {
+=======
+        #my-form {
+            margin: 2rem auto;
+            width: 90%;
+        }
+
+        .about__description{
+            margin: 2rem auto;
+        width: 90%;
+
+        }
+
+        .fa-github-square, .fa-file-pdf {
+>>>>>>> 51442616e96f51fe91f6e7771319457c2ef82738
             font-size: 6rem;
             margin: 0 6rem;
         }

@@ -36,13 +36,13 @@ body {
   color: white;
   width: 90%;
   margin-left: 0.2rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .nav__icon {
   -ms-grid-column-align: end;
       justify-self: end;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .nav__icon:hover {
@@ -56,6 +56,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: absolute;
   background: rgba(0, 0, 0, 0.9);
   left: 0;
@@ -122,8 +124,9 @@ body {
     transition: 0.2s;
   }
   .nav__icon {
-    left: 1%;
-    position: fixed;
+    left: 103%;
+    top: 0.2%;
+    position: absolute;
     background: rgba(0, 0, 0, 0.9);
     padding: 1rem;
     border-radius: 2px;
@@ -159,11 +162,21 @@ body {
 }
 
 @media (min-width: 1000px) {
-  .nav .nav__title {
+  .nav {
+    position: fixed;
+    width: 30%;
+    left: -30%;
+    height: 100%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .nav__title {
     font-size: 2.5rem;
   }
   .nav__icon {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
+    left: 104%;
+    top: 0.5%;
   }
   .nav__icon:hover {
     font-size: 2.5rem;
@@ -179,7 +192,7 @@ body {
 }
 
 .show__icon {
-  left: 41%;
+  left: 110%;
 }
 
 .header {
@@ -211,6 +224,9 @@ body {
   grid-gap: 2rem;
   margin: 3rem;
   list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main__project {
@@ -372,6 +388,13 @@ li:nth-child(6) > .main__project-overlay {
   }
 }
 
+@media (min-width: 1200px) {
+  .main__projects {
+    -ms-grid-columns: (minmax(auto, 400px))[3];
+        grid-template-columns: repeat(3, minmax(auto, 400px));
+  }
+}
+
 .footer {
   text-align: center;
   margin-bottom: 1rem;
@@ -384,7 +407,7 @@ li:nth-child(6) > .main__project-overlay {
 }
 
 .footer .about__description {
-  margin: 1rem;
+  margin: 2rem;
   font-size: 1.2rem;
 }
 
@@ -396,7 +419,7 @@ li:nth-child(6) > .main__project-overlay {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem;
+  margin: 2rem;
   grid-gap: 1rem;
 }
 
@@ -563,7 +586,19 @@ li:nth-child(6) > .main__project-overlay {
 }
 
 @media (min-width: 1000px) {
+<<<<<<< HEAD
   .footer .fa-github-square, .footer .fa-file-pdf, .footer .fa-linkedin {
+=======
+  .footer #my-form {
+    margin: 2rem auto;
+    width: 90%;
+  }
+  .footer .about__description {
+    margin: 2rem auto;
+    width: 90%;
+  }
+  .footer .fa-github-square, .footer .fa-file-pdf {
+>>>>>>> 51442616e96f51fe91f6e7771319457c2ef82738
     font-size: 6rem;
     margin: 0 6rem;
   }

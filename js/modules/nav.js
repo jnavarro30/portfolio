@@ -7,7 +7,19 @@ const Nav = ( _ => {
         const navEl = document.querySelector('.nav'),
               navIconEl = document.querySelector('.nav__icon'),
               navLinksEl = document.querySelector('.nav__links'),
-              navLinkEls = document.querySelectorAll('.nav__link');
+              navLinkEls = document.querySelectorAll('.nav__link'),
+              containerEl = document.querySelector(".container");
+
+        // click anywhere other than nav close nav
+        containerEl.addEventListener("click", (e) => {
+            if (!/nav/.test([...e.target.classList])) {
+                navIconEl.classList.remove('fa-times');
+                navIconEl.classList.add('fa-bars');
+                navIconEl.classList.remove('show__icon');
+                navEl.classList.remove('show__nav');
+                navLinksEl.classList.remove('show');
+            } 
+        });
 
         // toggle show/hide nav
         navIconEl.addEventListener('click', _ => {
@@ -21,6 +33,7 @@ const Nav = ( _ => {
         // highlight project on click
         navLinkEls.forEach(link => {
             link.addEventListener('click', _ => {
+                if (link.href.match(/(?<=#)\d+/) === null) return;
                 let id = link.href.match(/(?<=#)\d+/)[0],
                     str = window.getComputedStyle(link, null).getPropertyValue('border-bottom'),
                     color = str.match(/rgba.+/)[0];

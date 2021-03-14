@@ -48,8 +48,9 @@
     }
 
     &__icons {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-auto-flow: column;
+        justify-items: center;
         list-style-type: none;
         margin-top: 0.2rem;
 
@@ -57,6 +58,7 @@
             display: flex;
             flex-direction: column;
             text-decoration: none;
+            justify-content: center;
             color: $banner;
         }
     }
@@ -66,7 +68,8 @@
             cursor: pointer;
         }
     }
-    .fa-github-square, .fa-file-pdf {
+
+    .fa-github-square, .fa-file-pdf, .fa-linkedin {
         font-size: 1rem;
         color: $banner;
         margin: 0 2rem;
@@ -121,7 +124,7 @@
 
 @media(min-width: 350px) {
     .footer {
-        .fa-github-square, .fa-file-pdf {
+        .fa-github-square, .fa-file-pdf, .fa-linkedin {
             font-size: 3.5rem;
             margin: 0 2rem;
         }
@@ -154,7 +157,7 @@
             padding: 1rem;
         }
 
-        .fa-github-square, .fa-file-pdf {
+        .fa-github-square, .fa-file-pdf, .fa-linkedin {
             font-size: 7rem;
             margin: 0 4rem;
         }
@@ -173,7 +176,7 @@
 @media(min-width: 1000px) {
     .footer {
 
-        .fa-github-square, .fa-file-pdf {
+        .fa-github-square, .fa-file-pdf, .fa-linkedin {
             font-size: 6rem;
             margin: 0 6rem;
         }

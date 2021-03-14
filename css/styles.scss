@@ -11,6 +11,8 @@ body {
 
 .container {
     position: relative;
+    max-width: 900px;
+    margin: 0 auto;
 }
 // variables
 $banner: rgba(128, 128, 128, 0.6);

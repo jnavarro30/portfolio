@@ -218,6 +218,24 @@ body {
   }
 }
 
+#home {
+  text-align: center;
+  margin: 1rem 2rem;
+}
+
+#home h2 {
+  font-size: 2rem;
+}
+
+#home img {
+  width: 60%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0.2rem;
+  -webkit-box-shadow: 0 0 5px 1px black;
+          box-shadow: 0 0 5px 1px black;
+}
+
 .main__projects {
   display: -ms-grid;
   display: grid;
@@ -479,7 +497,7 @@ li:nth-child(6) > .main__project-overlay {
   cursor: pointer;
 }
 
-.footer .fa-github-square, .footer .fa-file-pdf, .footer .fa-linkedin {
+.footer .fa-github-square, .footer .fa-envelope, .footer .fa-linkedin {
   font-size: 1rem;
   color: rgba(128, 128, 128, 0.6);
   margin: 0 2rem;
@@ -547,7 +565,7 @@ li:nth-child(6) > .main__project-overlay {
 }
 
 @media (min-width: 350px) {
-  .footer .fa-github-square, .footer .fa-file-pdf, .footer .fa-linkedin {
+  .footer .fa-github-square, .footer .fa-envelope, .footer .fa-linkedin {
     font-size: 3.5rem;
     margin: 0 2rem;
   }
@@ -573,7 +591,7 @@ li:nth-child(6) > .main__project-overlay {
     font-size: 2rem;
     padding: 1rem;
   }
-  .footer .fa-github-square, .footer .fa-file-pdf, .footer .fa-linkedin {
+  .footer .fa-github-square, .footer .fa-envelope, .footer .fa-linkedin {
     font-size: 7rem;
     margin: 0 4rem;
   }
@@ -594,7 +612,7 @@ li:nth-child(6) > .main__project-overlay {
     margin: 2rem auto;
     width: 90%;
   }
-  .footer .fa-github-square, .footer .fa-file-pdf, .footer .fa-linkedin {
+  .footer .fa-github-square, .footer .fa-envelope, .footer .fa-linkedin {
     font-size: 6rem;
     margin: 0 6rem;
   }

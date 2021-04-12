@@ -26,6 +26,7 @@
                 <i class="nav__icon fas fa-bars"></i>
             </div>
             <div class="nav__links">
+                <a href="#home" class="nav__link">Home</a>
                 <a href="#0" class="nav__link">Pokedex</a>
                 <a href="#1" class="nav__link">Quiz</a>
                 <a href="#2" class="nav__link">Playlist</a>
@@ -38,6 +39,15 @@
             </div>
         </nav>
         <div class="nav__overlay"></div>
+
+        <!-- intro section -->
+        <section id='home' class='intro'>
+            <h2>Hello</h2>
+            <figure>
+                <img id='self' src='media/images/me.jpg' width="500" alt="profile picture"/>
+            </figure>
+            <p>My name is Jesse Navarro and I am a full stack developer currently located in Orange County.</p>
+        </section>
 
         <!-- main -->
         <main class='main'>
@@ -147,7 +157,7 @@
             <section id='about' class="footer__about">
                 <h1 class="about__title">&nbsp;&nbsp;About</h1>
                 <p class="about__description">
-                    Hello, I'm Jesse Navarro and I am a Front End Developer. I enjoy building websites and applications.
+                    For the past 2 years I have been programming almost everyday and enjoy the whole process from start to finish. Outside of coding I enjoy team sports, co-op video games, and cannot wait to write some code with fellow programmers. I can provide front and back end services for mobile apps, websites, and video games just to name a few.
                 </p>
             </section>
             <section id='contact' class="footer__contact">
@@ -155,7 +165,7 @@
                 <form id="my-form" action="https://formspree.io/f/xnqovebe" method="POST" class="footer__form">
                     <input id="name" name="name" type="text" class="form__name" placeholder="Name" required>
                     <input id="email" name="email" type="email" class="form__email" placeholder="Email" required>
-                    <textarea id="message" name="message" type="text" class="form__message" placeholder="Message" cols="30" rows="8"></textarea>
+                    <textarea id="message" name="message" type="text" class="form__message" placeholder="Message" cols="30" rows="8" maxLength="250"></textarea>
                     <button id="my-form-button" class="footer__send" type="submit" name="submit">SEND</button>
                 </form>
                 <div id="my-form-status"></div>
@@ -167,9 +177,9 @@
                         </a>
                     </li>
                     <li id='resume' class="footer__icon">
-                        <a href='https://drive.google.com/file/d/1HtREt3XWFGL7mVETeo4JH7MkZqLH83pc/view?usp=sharing' target="_blank" download>
-                            <span class='far fa-file-pdf'></span>
-                            <span class='footer__icon-text'>Resumé</span>
+                        <a href='mailto:jnavarro0789@gmail.com'  target="_blank">
+                            <span class='fas fa-envelope'></span>
+                            <span class='footer__icon-text'>Email</span>
                         </a>
                     </li>
                     <li class="footer__icon">

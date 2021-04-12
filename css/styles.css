@@ -378,13 +378,13 @@ li:nth-child(6) > .main__project-overlay {
     font-size: 2.5rem;
   }
   .main__project-description {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (min-width: 1000px) {
   .main__project-title, .main__project-description, .main__project-demo, .main__project-source {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 }
 
@@ -586,9 +586,6 @@ li:nth-child(6) > .main__project-overlay {
 }
 
 @media (min-width: 1000px) {
-<<<<<<< HEAD
-  .footer .fa-github-square, .footer .fa-file-pdf, .footer .fa-linkedin {
-=======
   .footer #my-form {
     margin: 2rem auto;
     width: 90%;
@@ -597,8 +594,7 @@ li:nth-child(6) > .main__project-overlay {
     margin: 2rem auto;
     width: 90%;
   }
-  .footer .fa-github-square, .footer .fa-file-pdf {
->>>>>>> 51442616e96f51fe91f6e7771319457c2ef82738
+  .footer .fa-github-square, .footer .fa-file-pdf, .footer .fa-linkedin {
     font-size: 6rem;
     margin: 0 6rem;
   }

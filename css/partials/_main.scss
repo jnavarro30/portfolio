@@ -131,7 +131,7 @@
         } 
         
         &__project-description {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
         }
     }
 }
@@ -140,7 +140,8 @@
     .main {
         &__project-title, &__project-description, 
         &__project-demo, &__project-source {
-            padding: 1rem;
+            padding: 0.5rem;
+
         } 
         
     }

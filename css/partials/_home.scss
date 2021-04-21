@@ -1,8 +1,10 @@
 #home {
     text-align: center;
-    margin: 1rem 2rem;
+    margin: 1rem
+      2rem;
     h2 {
         font-size: 2rem;
+        font-family: 'Orelega One', cursive;
     }
 
     img {
@@ -11,5 +13,12 @@
         border-radius: 5px;
         margin: 0.2rem;
         box-shadow: 0 0 5px 1px black;
+        max-width: 400px;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bolder;
+        font-size: 1.3rem;
     }
 }

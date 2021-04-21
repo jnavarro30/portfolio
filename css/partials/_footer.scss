@@ -9,7 +9,9 @@
 
     .about__description {
         margin: 2rem;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bolder;
     }
 
     &__form {
@@ -44,6 +46,7 @@
 
         &:hover {
             cursor: pointer;
+            color: rgba(255, 0, 255, 0.6);
         }
     }
 
@@ -64,8 +67,9 @@
     }
 
     .footer__icon {
-        &:hover {
+        &:hover .footer__icon-text{
             cursor: pointer;
+            color: rgba(255, 0, 255, 0.6);
         }
     }
 

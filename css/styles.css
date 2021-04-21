@@ -36,7 +36,7 @@ body {
   color: white;
   width: 90%;
   margin-left: 0.2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .nav__icon {
@@ -84,33 +84,32 @@ body {
 
 .nav a {
   border: none;
-  border-bottom: solid white;
   padding: 0.4rem;
   color: white;
   text-decoration: none;
 }
 
-.nav a:nth-child(1) {
+.nav a:nth-child(2) {
   border-bottom: solid rgba(132, 153, 231, 0.7);
 }
 
-.nav a:nth-child(2) {
+.nav a:nth-child(3) {
   border-bottom: solid rgba(238, 241, 36, 0.2);
 }
 
-.nav a:nth-child(3) {
+.nav a:nth-child(4) {
   border-bottom: solid rgba(128, 0, 128, 0.5);
 }
 
-.nav a:nth-child(4) {
+.nav a:nth-child(5) {
   border-bottom: solid rgba(0, 0, 255, 0.5);
 }
 
-.nav a:nth-child(5) {
+.nav a:nth-child(6) {
   border-bottom: solid rgba(174, 133, 202, 0.7);
 }
 
-.nav a:nth-child(6) {
+.nav a:nth-child(7) {
   border-bottom: solid rgba(26, 190, 26, 0.3);
 }
 
@@ -195,6 +194,10 @@ body {
   left: 110%;
 }
 
+#project {
+  border-bottom: 4px solid rgba(255, 0, 255, 0.6);
+}
+
 .header {
   text-align: center;
 }
@@ -220,11 +223,12 @@ body {
 
 #home {
   text-align: center;
-  margin: 1rem 2rem;
+  margin: 1rem 2rem;
 }
 
 #home h2 {
   font-size: 2rem;
+  font-family: 'Orelega One', cursive;
 }
 
 #home img {
@@ -234,6 +238,13 @@ body {
   margin: 0.2rem;
   -webkit-box-shadow: 0 0 5px 1px black;
           box-shadow: 0 0 5px 1px black;
+  max-width: 400px;
+}
+
+#home p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 1.3rem;
 }
 
 .main__projects {
@@ -426,7 +437,9 @@ li:nth-child(6) > .main__project-overlay {
 
 .footer .about__description {
   margin: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
 }
 
 .footer__form {
@@ -467,6 +480,7 @@ li:nth-child(6) > .main__project-overlay {
 
 .footer__send:hover {
   cursor: pointer;
+  color: rgba(255, 0, 255, 0.6);
 }
 
 .footer__icons {
@@ -493,8 +507,9 @@ li:nth-child(6) > .main__project-overlay {
   color: rgba(128, 128, 128, 0.6);
 }
 
-.footer .footer__icon:hover {
+.footer .footer__icon:hover .footer__icon-text {
   cursor: pointer;
+  color: rgba(255, 0, 255, 0.6);
 }
 
 .footer .fa-github-square, .footer .fa-envelope, .footer .fa-linkedin {

@@ -7,8 +7,6 @@
     <script src="https://kit.fontawesome.com/739f32426d.js" crossorigin="anonymous"></script><link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='css/styles.css'>
-    <script src='js/modules/form.js' defer></script>
-    <script src='js/script.js' type='module' defer></script>
     <title>Portfolio</title>
 </head>
 
@@ -154,7 +152,7 @@
         <!-- footer -->
         <footer class="footer">
             <section id='about' class="footer__about">
-                <h1 class="about__title">&nbsp;&nbsp;About</h1>
+                <h2 class="about__title">&nbsp;&nbsp;About</h2>
                 <p class="about__description">
                     For the past 2 years I have been programming almost everyday enjoying the whole process from start to finish. I enjoy team sports, co-op video games, and cannot wait to write some code with other programmers. I can provide full stack services for mobile apps, websites, video games and other software.
                 </p>
@@ -164,7 +162,7 @@
                 <form id="my-form" action="https://formspree.io/f/xnqovebe" method="POST" class="footer__form">
                     <input id="name" name="name" type="text" class="form__name" placeholder="Name" required>
                     <input id="email" name="email" type="email" class="form__email" placeholder="Email" required>
-                    <textarea id="message" name="message" type="text" class="form__message" placeholder="Message" cols="30" rows="8" maxLength="250"></textarea>
+                    <textarea id="message" name="message" class="form__message" placeholder="Message" cols="30" rows="8" maxLength="250"></textarea>
                     <button id="my-form-button" class="footer__send" type="submit" name="submit">SEND</button>
                 </form>
                 <div id="my-form-status"></div>
@@ -191,6 +189,8 @@
             </section>
         </footer>
     </div>
+    <script src='js/modules/form.js'></script>
+    <script src='js/script.js' type='module'></script>
 </body>
 
 </html>
